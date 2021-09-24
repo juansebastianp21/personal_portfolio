@@ -1,4 +1,4 @@
-export const featuredPortfolio = [
+export const portfolioProjects = [
     {
         id: 1,
         title: 'Social Media App',

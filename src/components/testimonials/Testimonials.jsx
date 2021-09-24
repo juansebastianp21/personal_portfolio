@@ -4,28 +4,31 @@ export default function Testimonials() {
     const data = [
         {
             id: 1,
-            name: 'Tom Durden',
-            title: 'Senior Developer',
-            img: 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            name: 'Gerardo Andres Peña',
+            title: 'Manager of Constructora San Carlos',
+            img: 'https://juansebastianp21portfolio.s3.sa-east-1.amazonaws.com/testimonials/andres_pena.png',
             icon: 'assets/twitter.png',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.',
+            desc: 'Working with Sebastian was better than expected. He is an incredibly talented developer but what really makes him stand out is his work ethic.',
+            link: 'https://www.facebook.com/ConstructoraSanCarlosCo/',
         },
         {
             id: 2,
-            name: 'Alex Kalinski',
-            title: 'Co-Founder of DELKA',
-            img: 'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            name: 'Edwin Ordoñez',
+            title: 'Co-Founder of Ceotic S.A.S.',
+            img: 'https://juansebastianp21portfolio.s3.sa-east-1.amazonaws.com/testimonials/edwin_ordonez.png',
             icon: 'assets/youtube.png',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ',
+            desc: `Sebastian is a clear communicator with the tenacity and confidence to really dig in to tricky development scenarios and the collaborative friction that's needed to generate excellent work.`,
             featured: true,
+            link: 'http://solucionesceotic.com/',
         },
         {
             id: 3,
-            name: 'Martin Harold',
-            title: 'CEO of ALBI',
-            img: 'https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            name: 'Carlos Molano',
+            title: 'CEO of UDEKI',
+            img: 'https://juansebastianp21portfolio.s3.sa-east-1.amazonaws.com/testimonials/carlos_molano.jpeg',
             icon: 'assets/linkedin.png',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem',
+            desc: 'Sebastian was a real pleasure to work with and we look forward to working with him again.',
+            link: 'https://udeki.com/',
         },
     ];
     return (
@@ -48,7 +51,9 @@ export default function Testimonials() {
                         <div className="center">{u.desc}</div>
                         <div className="bottom">
                             <h3>{u.name}</h3>
-                            <h4>{u.title}</h4>
+                            <a href={u.link}>
+                                <h4>{u.title}</h4>
+                            </a>
                         </div>
                     </div>
                 ))}

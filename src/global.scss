@@ -1,5 +1,7 @@
 $mainColor: #15023a;
 $width: 768px;
+$sectionsTitleSize: 50px;
+$sectionsTitleSizeMobile: 38px;
 
 @mixin mobile {
     @media (max-width: #{$width}) {
