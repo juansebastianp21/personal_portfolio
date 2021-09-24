@@ -1,13 +1,21 @@
 import './topbar.scss';
 import {Person, Mail} from '@material-ui/icons';
 
+const spLogoUrl =
+    'https://juansebastianp21portfolio.s3.sa-east-1.amazonaws.com/logo-sp.png';
+const spLogoUrlActive =
+    'https://juansebastianp21portfolio.s3.sa-east-1.amazonaws.com/logo-sp-active.png';
+
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
         <div className={'topbar ' + (menuOpen && 'active')}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        .genius
+                        <img
+                            src={menuOpen ? spLogoUrl : spLogoUrlActive}
+                            alt="LogoSP"
+                        />
                     </a>
                     <div className="itemContainer">
                         <Person className="icon" />
