@@ -34,7 +34,7 @@ export const portfolioProjects = [
         id: 6,
         title: 'Coffe Agenda',
         subtitle: 'React Native',
-        img: './assets/agenda_cafetera.png',
+        img: './assets/coffe_agenda_baner.png',
     },
 ];
 
