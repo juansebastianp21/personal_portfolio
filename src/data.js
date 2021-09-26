@@ -27,13 +27,14 @@ export const portfolioProjects = [
         id: 5,
         title: 'Dola',
         subtitle: 'React',
-        img: './assets/huertuz_banner.png',
+        // img: './assets/huertuz_banner.png',
+        img: 'https://www.codavilla.com/static/e996fa40f86cc700bf119bb97429f2e1/ee604/gumroad-1.png',
     },
     {
         id: 6,
-        title: 'Shock',
-        subtitle: 'Adobe Illustrator',
-        img: './assets/huertuz_banner.png',
+        title: 'Coffe Agenda',
+        subtitle: 'React Native',
+        img: './assets/agenda_cafetera.png',
     },
 ];
 
