@@ -31,7 +31,10 @@ export default function Portafolio() {
                 {portfolioProjects.map((item) => (
                     <div key={item.id} className="item">
                         <img src={item.img} alt={item.title} />
-                        <h3>{item.title}</h3>
+                        <div className="infoContainer">
+                            <h3>{item.title}</h3>
+                            <h4>{item.subtitle}</h4>
+                        </div>
                     </div>
                 ))}
             </div>
